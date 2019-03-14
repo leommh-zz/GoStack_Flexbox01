@@ -1,0 +1,50 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  /* WRAP */
+  /* Define que se ocupar mais que a tela inteira, então vai para outra linha (obs: não pode ser flex 1 */
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  /* WRAP */
+
+  flex-direction: row;
+  /* align-items: flex-end;
+  justify-content: flex-end; */
+}
+
+.box {
+  width: 100px;
+  height: 60px;
+  background: #333;
+  margin: 5px;
+  /* GROW */
+  /* Define se o elemento pode aumentar de tamanho automaticamente */
+  /* flex-grow: 1; */
+  /* GROW */
+
+  /* SHRINK */
+  /* Define se o elemento pode se espremer para caber no espaço */
+  /* flex-shrink: 0; or flex: 1 0; */
+  /* SHRINK */
+}
+
+.red {
+  background: red;
+  order: 1;
+}
+
+.green {
+  background: green;
+  order: 2;
+}
+
+.blue {
+  background: blue;
+  order: 0;
+}
